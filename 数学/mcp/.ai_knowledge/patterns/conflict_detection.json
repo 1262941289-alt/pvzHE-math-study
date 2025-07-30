@@ -1,0 +1,27 @@
+{
+  "id": "conflict_detection_001",
+  "category": "rule_management",
+  "title": "规则冲突检测模式",
+  "patterns": [
+    {
+      "id": "contradiction_pattern",
+      "name": "矛盾规则检测",
+      "description": "检测相互矛盾的规则",
+      "examples": [
+        {
+          "rule1": "总是生成测试代码",
+          "rule2": "不要生成测试代码",
+          "conflict_type": "direct_contradiction",
+          "resolution": "询问用户优先级"
+        }
+      ]
+    },
+    {
+      "id": "priority_conflict",
+      "name": "优先级冲突",
+      "description": "同等优先级的冲突规则",
+      "resolution_strategy": "最新规则优先"
+    }
+  ],
+  "created_at": "2025-01-29"
+}

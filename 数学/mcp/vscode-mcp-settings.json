@@ -1,0 +1,25 @@
+{
+  "mcp.servers": {
+    "寸止": {
+      "command": "寸止.exe",
+      "args": [],
+      "cwd": ".",
+      "env": {
+        "PATH": "${workspaceFolder}"
+      }
+    },
+    "记忆": {
+      "command": "记忆.exe", 
+      "args": [],
+      "cwd": ".",
+      "env": {
+        "PATH": "${workspaceFolder}"
+      }
+    }
+  },
+  "mcp.client": {
+    "timeout": 30000,
+    "retries": 3,
+    "logLevel": "info"
+  }
+}

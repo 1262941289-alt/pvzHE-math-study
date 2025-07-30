@@ -1,0 +1,53 @@
+{
+  "id": "character_index_001",
+  "title": "角色索引系统",
+  "description": "所有角色的快速索引，防止遗漏",
+  "categories": {
+    "侍女团": {
+      "source_file": "08-苏青云侍女团按种族分类版.md",
+      "total_count": 719,
+      "major_characters": [
+        "妙音（九尾灵狐）",
+        "焰姬（火凤族）", 
+        "碧澜（青龙族）",
+        "雷霆（雷鸟族）",
+        "星辰（麒麟族）"
+      ],
+      "search_keywords": ["侍女", "妖族", "人族", "九天神韵", "四时花语", "君子雅韵", "瑶池仙韵"]
+    },
+    "苏家长辈": {
+      "source_file": "02-人物设定与苏家资料.md, 12-苏家三位长辈女性的极度溺爱设定.md",
+      "major_characters": [
+        "苏无霜（太上老祖）",
+        "苏梦瑶（家主）", 
+        "苏倾城（大长老）"
+      ],
+      "search_keywords": ["苏无霜", "苏梦瑶", "苏倾城", "太上老祖", "家主", "大长老"]
+    },
+    "器灵": {
+      "source_file": "07-器灵.md",
+      "major_characters": [
+        "星璇（光明器灵）",
+        "魅影（黑暗器灵）"
+      ],
+      "search_keywords": ["星璇", "魅影", "器灵", "神器"]
+    },
+    "NPC角色": {
+      "source_file": "04-剧情规划与NPC设定.md",
+      "major_characters": [],
+      "search_keywords": ["NPC", "配角", "路人"]
+    },
+    "其他角色": {
+      "source_file": "各种设定文档",
+      "major_characters": [],
+      "search_keywords": ["修士", "凡人", "敌人", "朋友"]
+    }
+  },
+  "search_strategy": {
+    "step1": "检查角色索引",
+    "step2": "在对应源文件中搜索",
+    "step3": "如果未找到，询问用户角色位置",
+    "step4": "找到后更新索引"
+  },
+  "created_at": "2025-01-29"
+}

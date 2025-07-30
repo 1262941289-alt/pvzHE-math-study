@@ -1,0 +1,17 @@
+{
+  "version": "1.0.0",
+  "created_at": "2025-01-29",
+  "description": "AI助手知识库系统配置",
+  "settings": {
+    "auto_load": true,
+    "cache_enabled": true,
+    "max_cache_size": 1000,
+    "sync_interval": 300
+  },
+  "paths": {
+    "rules": "./rules/",
+    "preferences": "./preferences/",
+    "patterns": "./patterns/",
+    "context": "./context/"
+  }
+}

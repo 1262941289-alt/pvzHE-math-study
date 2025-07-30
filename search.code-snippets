@@ -1,0 +1,26 @@
+{
+  "搜索文件内容": {
+    "prefix": "search",
+    "body": [
+      "# 搜索文件内容",
+      "python search_engine.py -k \"$1\" -p \"$2\" --interactive"
+    ],
+    "description": "搜索文件内容的命令"
+  },
+  "正则搜索": {
+    "prefix": "regex-search",
+    "body": [
+      "# 正则表达式搜索",
+      "python search_engine.py -r \"$1\" -p \"$2\" -c 2"
+    ],
+    "description": "使用正则表达式搜索"
+  },
+  "多关键词搜索": {
+    "prefix": "multi-search",
+    "body": [
+      "# 多关键词搜索",
+      "python search_engine.py -m \"$1\" \"$2\" -o AND --interactive"
+    ],
+    "description": "多关键词搜索"
+  }
+}

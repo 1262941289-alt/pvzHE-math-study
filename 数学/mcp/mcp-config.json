@@ -1,0 +1,36 @@
+{
+  "mcpServers": {
+    "寸止": {
+      "command": "寸止",
+      "args": [],
+      "env": {},
+      "description": "寸止强制交互网关 - 用于AI与用户之间的受控交互",
+      "timeout": 30000,
+      "restart": true
+    },
+    "记忆": {
+      "command": "记忆",
+      "args": [],
+      "env": {},
+      "description": "记忆管理系统 - 用于长期知识库管理",
+      "timeout": 10000,
+      "restart": true
+    },
+    "context7-mcp": {
+      "command": "context7-mcp",
+      "args": [],
+      "env": {},
+      "description": "Context7 MCP服务器 - 用于获取权威技术文档",
+      "timeout": 15000,
+      "restart": true
+    }
+  },
+  "logging": {
+    "level": "info",
+    "file": "mcp-server.log"
+  },
+  "security": {
+    "allowedCommands": ["寸止", "记忆", "context7-mcp"],
+    "maxConnections": 10
+  }
+}

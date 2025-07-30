@@ -1,0 +1,33 @@
+{
+  "mcp.servers": {
+    "寸止": {
+      "command": "python",
+      "args": ["寸止.py"],
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}",
+        "PYTHONIOENCODING": "utf-8"
+      }
+    },
+    "记忆": {
+      "command": "python",
+      "args": ["记忆.py"],
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}",
+        "PYTHONIOENCODING": "utf-8"
+      }
+    }
+  },
+  "mcp.client": {
+    "timeout": 30000,
+    "retries": 3,
+    "logLevel": "info",
+    "autoReconnect": true
+  },
+  "mcp.logging": {
+    "enabled": true,
+    "level": "debug",
+    "file": "mcp-client.log"
+  }
+}

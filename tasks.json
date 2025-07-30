@@ -1,0 +1,181 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "搜索: 函数",
+      "type": "shell",
+      "command": "python",
+      "args": [
+        "search_engine.py",
+        "-k",
+        "函数",
+        "--interactive"
+      ],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "new"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "搜索: 定义",
+      "type": "shell",
+      "command": "python",
+      "args": [
+        "search_engine.py",
+        "-k",
+        "定义",
+        "--interactive"
+      ],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "new"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "搜索: TODO",
+      "type": "shell",
+      "command": "python",
+      "args": [
+        "search_engine.py",
+        "-k",
+        "TODO",
+        "--interactive"
+      ],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "new"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "搜索: FIXME",
+      "type": "shell",
+      "command": "python",
+      "args": [
+        "search_engine.py",
+        "-k",
+        "FIXME",
+        "--interactive"
+      ],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "new"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "搜索: BUG",
+      "type": "shell",
+      "command": "python",
+      "args": [
+        "search_engine.py",
+        "-k",
+        "BUG",
+        "--interactive"
+      ],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "new"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "搜索: 自定义",
+      "type": "shell",
+      "command": "python",
+      "args": [
+        "search_engine.py",
+        "-k",
+        "${input:searchKeyword}",
+        "--interactive"
+      ],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "new"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "编辑器搜索: 当前选中文本",
+      "type": "shell",
+      "command": "python",
+      "args": [
+        "editor_search_integration.py",
+        "--search-selection"
+      ],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "new"
+      }
+    },
+    {
+      "label": "编辑器搜索: 交互式搜索",
+      "type": "shell",
+      "command": "python",
+      "args": [
+        "workspace_jumper.py",
+        "${input:searchTerm}"
+      ],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "new"
+      }
+    },
+    {
+      "label": "调试控制台搜索",
+      "type": "shell",
+      "command": "python",
+      "args": [
+        "-i",
+        "debug_console_search.py"
+      ],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "new"
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "id": "searchKeyword",
+      "description": "输入搜索关键词",
+      "default": "",
+      "type": "promptString"
+    },
+    {
+      "id": "searchTerm",
+      "description": "输入搜索关键词",
+      "default": "",
+      "type": "promptString"
+    }
+  ]
+}

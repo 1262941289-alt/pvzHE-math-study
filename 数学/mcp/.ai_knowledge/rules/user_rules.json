@@ -1,0 +1,19 @@
+{
+  "id": "user_rules_001",
+  "type": "user_defined",
+  "category": "math_education",
+  "title": "数学教育用户规则",
+  "rules": [
+    {
+      "id": "user_rule_001",
+      "content": "在最后提醒我上述内容适合添加到知识库中或者是GitHub里",
+      "priority": 7,
+      "active": true,
+      "category": "workflow_reminder",
+      "created_at": "2025-01-30",
+      "description": "完成数学教学工作后提醒用户内容的最佳存储位置"
+    }
+  ],
+  "created_at": "2025-01-30",
+  "updated_at": "2025-01-30T11:00:00Z"
+}

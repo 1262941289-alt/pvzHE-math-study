@@ -1,0 +1,35 @@
+{
+  "id": "context_awareness_001",
+  "category": "intelligent_response",
+  "title": "上下文感知模式",
+  "patterns": [
+    {
+      "id": "project_context_switch",
+      "name": "项目上下文切换",
+      "description": "根据当前项目类型调整回答方式",
+      "contexts": {
+        "玄幻世界设定": {
+          "focus": ["世界观", "人物设定", "剧情发展"],
+          "style": "创意导向",
+          "terminology": "修仙术语"
+        },
+        "编程项目": {
+          "focus": ["代码质量", "最佳实践", "性能优化"],
+          "style": "技术导向",
+          "terminology": "编程术语"
+        }
+      }
+    },
+    {
+      "id": "conversation_memory",
+      "name": "对话记忆",
+      "description": "记住对话中的重要信息",
+      "memory_types": [
+        "用户偏好变化",
+        "项目进展状态",
+        "问题解决历史"
+      ]
+    }
+  ],
+  "created_at": "2025-01-29"
+}

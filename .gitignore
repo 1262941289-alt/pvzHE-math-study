@@ -1,0 +1,89 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# 大文件和二进制文件
+*.pdf
+*.apk
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.ico
+*.mp4
+*.avi
+*.mov
+*.wmv
+*.flv
+*.webm
+*.mp3
+*.wav
+*.flac
+*.aac
+
+# 临时文件
+*.tmp
+*.temp
+*.log
+*.cache
+*.bak
+*.backup
+
+# 搜索和缓存文件
+search_results.html
+*.cpython-*.pyc
+
+# 特定目录
+00.实体书籍扫描件/
+26张宇基础30讲（高数）-3/
+武汉理工汽车理论总结(考研笔记)-已解锁/
+第一章 汽车制造过程的基本概念/
+车辆制造工艺学知识点梳理5-7章/
+
+# 保留重要的配置和文档
+!数学/
+!数学/**/*.md
+!数学/mcp/
+!数学/mcp/**/*.md
+!*.py
+!*.md
+!*.json
+!*.vim
+!*.code-snippets
