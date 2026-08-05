@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>U9 BOM 只读采集</title>
+  <style>
+    body { width: 300px; font-family: "Microsoft YaHei", sans-serif; padding: 12px; }
+    h3 { margin: 0 0 8px; font-size: 14px; }
+    button { width: 100%; padding: 8px; margin: 6px 0; cursor: pointer; }
+    #status { margin-top: 8px; font-size: 12px; white-space: pre-wrap; word-break: break-all; }
+    .err { color: #c00; }
+    .ok { color: #060; }
+  </style>
+</head>
+<body>
+  <h3>U9 BOM 只读采集</h3>
+  <button id="collect">仅采集（预览 JSON）</button>
+  <button id="copy">采集并复制到剪贴板</button>
+  <div id="status"></div>
+  <script src="popup.js"></script>
+</body>
+</html>

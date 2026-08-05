@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "U9 BOM 只读采集",
+  "version": "1.0",
+  "description": "只读采集 U9 物料清单(BOM)页面数据，通过剪贴板传递给 Excel VBA 加载项进行自动核对。不修改页面，不保存、不提交。",
+  "minimum_chrome_version": "102",
+  "permissions": [
+    "scripting",
+    "activeTab",
+    "clipboardWrite"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content-script.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "U9 BOM 只读采集",
+    "default_popup": "popup.html"
+  }
+}
